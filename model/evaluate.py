@@ -15,7 +15,7 @@ y= data['species']
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 
 # load the saved model 
-model = joblib.load('model/model.pkl')
+model = joblib.load('model/iris_model.pkl')
 
 # make predictions
 y_pred = model.predict(x_test)
